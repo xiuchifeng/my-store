@@ -1,7 +1,7 @@
 import axios from "axios"
-// "http://123.207.32.32:8000/api/wh" 
-// "http://106.54.54.237:8000/api/wh" 
-axios.defaults.baseURL="http://123.207.32.32:8000/api/wh"
+// 接口不方便暴露不然容易崩..
+//接口是别人那拿的
+// axios.defaults.baseURL="http://123.207.32.32:8000/api/wh"
 axios.interceptors.response.use(res=>res.data)
 
 export default function Myaxios(url,data={},method="get"){
